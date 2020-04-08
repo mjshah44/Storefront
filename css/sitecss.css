@@ -1,0 +1,428 @@
+/********************************************************************
+I declare that my assignment is wholly my own work in accordance with Seneca
+Academic Policy. No part of this assignment has been copied manually or
+electronically from any other source (including web sites) except for the
+information supplied by the WEB222 instructors and / or made available in this
+assignment for my use.
+I also declare that no part of this assignment has been distributed to other
+students.
+Name: Mohit Jignesh Shah
+Dated: March 20, 2020
+********************************************************************/
+
+/*Body css*/
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: black;
+  padding: 5px 10px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: inline-block;
+  z-index: 1000;
+}
+
+/*css of navigation bar*/
+.navbar .shoe {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 20px;
+  border-radius: 4px;
+}
+
+/*css of logo in the navigation bar*/
+.navbar a.logo {
+  font-size: 0px;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+
+/*css of hover of the navigation bar*/
+.navbar .shoe:hover{
+    background-color: limegreen;
+}
+
+/*css of image in the navigation bar*/
+.navbar img{
+	height: 90px;
+	width: 130px;
+}
+
+.navbar a:hover {
+  color: black;
+}
+
+/*css of tabs in the navigation bar*/
+.navbar a.active {
+  background-color: limegreen;
+  color: white;
+}
+
+/*css of right side in the navigation bar*/
+.navbar-right {
+  float: right;
+  margin-right: 90px;
+  padding-top: 20px;
+}
+
+/*css of left side in the navigation bar*/
+.navbar-left {
+    float: left;
+    margin-left: 20px;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 80px;
+  text-align: center;
+  background-image: url("../images/backg.jpg");
+  background-repeat: repeat;
+  color: black;
+}
+
+.header p{
+  font-size: 24px;
+  background-color: #fff2ac;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+  background-color: #fff2ac;
+}
+
+/* Column container */
+.row {
+display : flex;
+flex-wrap : wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 30%;
+background-color : #f1f1f1;
+padding : 20px;
+}
+
+/* Main column */
+.main {
+flex : 70%;
+background-color : white;
+padding : 20px;
+}
+
+/* Fake image, just for this example */
+.img {
+  padding: 20px;
+}
+
+/*Hover Button*/
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 20px;
+  padding: 10px;
+  width: 150px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  vertical-align:middle;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/*Click Button*/
+.button1 {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 20px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 4px #999;
+}
+
+.button1:hover {background-color: #3e8e41}
+
+.button1:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+/* Background Color of the description area*/
+.backcol{
+	background-color: #fff6c4;
+	padding: 5px 15px;
+}	
+				
+.accordion {
+	font-weight:bold;
+  background-color: black;
+  color: white;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 20px;
+  transition: 0.4s;
+}
+
+.accordion:after {
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: limegreen;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.panel1{
+  font-size: 18px;
+}
+
+.reflect1{
+	text-align:center;
+}
+
+.reflect{
+	padding:40px;
+	margin-left:30px;
+	margin-right:30px;
+}
+
+.head1 {
+	font-family:lato;
+	color:limegreen;
+	font-weight:bold;
+	margin-top:30px;
+	font-size: 25pt;
+}
+
+/*side nav*/
+
+.menunav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.menunav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.menunav a:hover {
+  color: limegreen;
+}
+
+.menunav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.menu{
+  font-size:30px;
+  cursor:pointer;
+  color:white;
+  float: right;
+  margin-top: 20px;
+  margin-right: 20px;
+  display: none;
+}
+
+a.mactive{
+  background-color: limegreen;
+  color: black;
+}
+
+@media only screen and (max-width: 600px) {
+  .body{
+    display: block;
+  }
+
+  .topnav{
+    display: inline-block;
+  }
+
+  .topnav .icon{
+    display: block;
+  }
+  
+  .navbar-right{
+    display: none;
+  }
+
+  .menu{
+    display: block;
+  }
+
+  .navbar .shoe{
+    display: none;
+  }
+
+  .navbar img{
+    margin: 0 auto;
+  }
+
+  .reflect{
+    margin: 0px;
+    font-size: 18px;
+  }
+
+}
+
+@media only screen and (max-width: 900px) and (min-width: 599px) {
+  .body{
+    display: block;
+  }
+  
+  .navbar{
+    width: 100%;
+  }
+  
+  .navbar-right{
+    display: none;
+    margin-right: 0px;
+  }
+
+  .menu{
+    display: block;
+  }
+
+  .navbar .shoe{
+    display: none;
+  }
+
+  .navbar img{
+    margin: 0 auto;
+  }
+
+  .side{
+    margin: auto;
+    flex: 0%;
+  }
+
+  .img{
+    margin: auto;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1350px) and (min-width: 899px) {
+  .body{
+    display: block;
+  }
+  
+  .navbar{
+    width: 100%;
+  }
+
+  .menu{
+    display: none;
+  }
+  
+  .navbar-right{
+    display: block;
+    margin-right: 0px;
+  }
+
+  .navbar .shoe{
+    display: block;
+  }
+
+  .navbar img{
+    margin: 0 auto;
+  }
+
+  .side{
+    float: left;
+    flex: 0%;
+  }
+
+  .img{
+    margin: auto;
+    display: block;
+  }
+
+  .main{
+    flex: 0%;
+    float: right;
+  }
+}

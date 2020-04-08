@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8" />
+   <title>StoreFront</title>
+   <style>
+   </style>
+   <script>
+    function toggleNav() {
+        var element = document.getElementById("navigation");
+        if (element.style.width == "200px") {
+            element.style.width = "0px";
+        } else {
+            element.style.width = "200px";
+        }
+    }
+
+    function closeNav() {
+      document.getElementById("navigation").style.width = "0";
+    }
+    </script>
+   <link rel='stylesheet' href='css/sitecss.css' type='text/css' media='screen'>
+</head>
+<body>
+
+<div class="navbar">
+            <a href="storefront.html" class = "navbar-left logo">
+                <img src = "images/ShopMy.png" alt = "Shopp.My" title = "Shopp.My"/>
+            </a>
+
+            <span class = "menu" onclick="toggleNav()">&#9776; Menu</span>
+            <div id="navigation" class="menunav">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+              <a href="storefront.html">Home</a>
+              <a class = "mactive" href="reflection.html">Reflection</a>
+              <a href="#">About</a>
+              <a href="#">Services</a>
+              <a href="#">Clients</a>
+              <a href="#">Contact</a>
+            </div>
+
+                <div class="navbar-right">
+                    <a class="shoe" href="storefront.html">HOME</a>
+					<a class="active shoe" href="reflection.html">REFLECTION</a>
+                    <a class="shoe" href="#about">ABOUT</a>
+                    <a class="shoe" href="#products">PRODUCTS</a>
+                    <a class="shoe" href="#pricing">PRICING</a>
+                    <a class="shoe" href="#contact">CONTACT</a>
+                </div>
+        </div>
+        <br><br><br><br><br>
+
+	<div class="header">
+  <h1>My First Website Page</h1>
+  <p>Your one stop shop destination for athletic inspired shoes for men.<br>
+  Awesome deals and exclusive styles from Jordan, Nike, adidas, and more!</p>
+</div>
+
+<div class="reflect1">
+<div class="head1">REFLECTION</div>
+</div>
+
+<div class="reflect">
+
+<div class="accordion">Explain the concept of Responsive Design.  What does the term mean?  What did you discover in your research?</div>
+<div class="panel1">
+    <p>The responsive plan is a way to deal with site page creation that utilizes adaptable formats, adjustable pictures and falling template media questions. </p>
+	<p>In my research, I discovered that the objective of responsive design is to assemble website pages that distinguish the guest's screen size and direction and change the design accordingly.</p><br>
+</div>
+<br>
+
+<button class="accordion">How does responsive design relate to web technologies?  How can web pages take advantage of it?</button>
+<div class="panel1">
+  <p>Responsive design is a web improvement approach that makes dynamic changes to the presence of a site, depending upon the screen size and direction of the gadget being utilized to see it. And this is how it relate to web technologies.</p>
+  <p>In a responsive design, page components reshuffle as the viewport expands or contracts so that the website can easily fits to any device and this is how the web pages take advantage of it.</p><br>
+</div>
+<br>
+
+<button class="accordion">What techniques, technologies, and patterns did you use in your responsive design?</button>
+<div class="panel1">
+  <p>In my responsive design, I used responsive meta tags in my HTML document. I have applied media queries to my layout and made images responsive. Lastly, I ensured that my typography would be easily readable on mobile devices.</p>
+</div><br>
+<br>
+
+<button class="accordion">What did you learn about building web apps for different devices?</button>
+<div class="panel1">
+  <p>Mobile web apps are web apps optimized for a good phone experience. They aren't mobile applications, but websites written in HTML/CSS and run by a browser. While they may be designed to resemble the feel of smartphone apps, they don't have much in common.</p><br>
+</div>
+<br>
+</div>
+
+
+<div class="footer">
+  <h2>©2020 - &lt;Mohit Jignesh Shah&gt;</h2>
+	<h2><a href="../partA/ontario.html">Part A link to ontario.html</a></h2>
+</div>
+	
+</body>
+</html>
+
+<!-- Images are taken from Amazon website: https://www.amazon.ca/s?k=formal+shoes+for+men&s=price-desc-rank&qid=1584053174&ref=sr_st_price-desc-rank -->
