@@ -324,16 +324,20 @@ a.mactive{
   }
   
   .navbar-right{
-    display: none;
+    display: block;
   }
   
   .navbar-left{
 	margin: 0px;
   }
+  
+  .navbar .shoe{
+	display: none;
+  }
 
   .menu{
     display: block;
-	margin-right: 20px;
+	margin-right: 10px;
   }
   
   .menunav{
@@ -347,6 +351,10 @@ a.mactive{
   .reflect{
     margin: 0px;
     font-size: 18px;
+  }
+  
+  .img{
+	  padding: 0px;
   }
 
 }
@@ -368,7 +376,7 @@ a.mactive{
 
   .menu{
     display: block;
-	margin-right: 20px;
+	margin-right: 10px;
   }
 
   .navbar img{
