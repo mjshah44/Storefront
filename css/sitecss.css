@@ -313,16 +313,10 @@ a.mactive{
 }
 
 @media only screen and (max-width: 600px) {
-  .body{
-    display: block;
-  }
-
-  .topnav{
-    display: inline-block;
-  }
-
-  .topnav .icon{
-    display: block;
+  
+  .navbar{
+	width: 100%;
+	display: block;
   }
   
   .navbar-right{
@@ -331,10 +325,6 @@ a.mactive{
 
   .menu{
     display: block;
-  }
-
-  .navbar .shoe{
-    display: none;
   }
 
   .navbar img{
@@ -349,9 +339,6 @@ a.mactive{
 }
 
 @media only screen and (max-width: 900px) and (min-width: 599px) {
-  .body{
-    display: block;
-  }
   
   .navbar{
     width: 100%;
@@ -364,10 +351,6 @@ a.mactive{
 
   .menu{
     display: block;
-  }
-
-  .navbar .shoe{
-    display: none;
   }
 
   .navbar img{
