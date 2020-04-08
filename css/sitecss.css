@@ -369,9 +369,6 @@ a.mactive{
 }
 
 @media screen and (max-width: 1350px) and (min-width: 899px) {
-  .body{
-    display: block;
-  }
   
   .navbar{
     width: 100%;
