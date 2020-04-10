@@ -7,7 +7,7 @@ assignment for my use.
 I also declare that no part of this assignment has been distributed to other
 students.
 Name: Mohit Jignesh Shah
-Dated: March 20, 2020
+Dated: April 10, 2020
 ********************************************************************/
 
 /*Body css*/
@@ -210,7 +210,8 @@ padding : 20px;
 	background-color: #fff6c4;
 	padding: 5px 15px;
 }	
-				
+
+/*Reflection page body*/		
 .accordion {
 	font-weight:bold;
   background-color: black;
@@ -231,6 +232,7 @@ padding : 20px;
   margin-left: 5px;
 }
 
+/*Side Panel*/
 .panel {
   padding: 0 18px;
   background-color: limegreen;
@@ -239,10 +241,12 @@ padding : 20px;
   transition: max-height 0.2s ease-out;
 }
 
+/*Font of Side Panel*/
 .panel1{
   font-size: 18px;
 }
 
+/*Font of Body*/
 .reflect1{
 	text-align:center;
 }
@@ -253,6 +257,7 @@ padding : 20px;
 	margin-right:30px;
 }
 
+/*Font of h1 tag*/
 .head1 {
 	font-family:lato;
 	color:limegreen;
@@ -312,6 +317,7 @@ a.mactive{
   color: black;
 }
 
+/*To make website responsive*/
 @media only screen and (max-width: 600px) {
   
   body{
@@ -359,6 +365,7 @@ a.mactive{
 
 }
 
+/*To make website responsive*/
 @media only screen and (max-width: 900px) and (min-width: 599px) {
   
   body{
@@ -394,6 +401,7 @@ a.mactive{
   }
 }
 
+/*To make website responsive*/
 @media screen and (max-width: 1350px) and (min-width: 899px) {
 	
 	body{
